@@ -8,11 +8,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+@font-face {
+  font-family:"kg";
+  src: url(../media/aldo.woff)
+}
 body {
   background: #fff;
   color: #444;
-  font-family: "Open Sans", sans-serif;
+  font-family: "kg", kg;
 }
 
 a {
@@ -23,7 +26,8 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #51d8af;
+  //color: #51d8af !important;
+  color: #aaa !important;
   outline: none;
   text-decoration: none;
 }
@@ -33,17 +37,46 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "kg", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
 }
+/*---------------
+Personalizados
+---------------*/
+.logoFuente {
+  color:#444;
+  font-weight: bold;
+}
+.iconoTic {
+  color:#8cc20a !important;
+}
+.titulo {
+  color:#548708 !important;
+  padding-left:48px;
+  background-image:url(../img/kaktusTit.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size:2.5rem;
+}
+a.microWeb:hover {
+  color:#548708 !important;
+  background: white !important;
+  border: 3px solid #8cc20a !important;
+}
+.integrantes {
+  background:#9ad444 !important;
+}
+.msjEnviar {
+  background:#8cc20a !important;
+}
+.msjEnviar:hover {
+  background:#548708 !important;
+  color:white!important;
+}
+
 
 /* Back to top button */
 
@@ -195,14 +228,15 @@ h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: #666;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
 }
 
 #intro .intro-content h2 span {
-  color: #50d8af;
+  //color: #8cc20a;
+  color:#666
   text-decoration: underline;
 }
 
@@ -619,8 +653,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background: #8cc20a;
+  'background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
