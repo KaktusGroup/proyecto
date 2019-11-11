@@ -76,7 +76,38 @@ a.microWeb:hover {
   background:#548708 !important;
   color:white!important;
 }
-
+#tablaSolu {
+  //width:100%!important;
+}
+#tablaSolu th {
+  font-size:1rem;
+  text-align:left;
+  color:#888;
+  font-style:italic;
+  position:relative;
+  left:10px;
+}
+#tit {
+  width:300px!important;
+  min-width:220px;
+}
+#volver {
+  position:absolute;
+  z-index:2000;
+  background:white;
+  padding:5px 15px;
+  color:#548708;
+  top:10px;
+  left:10px;
+  border:2px solid #548708!important;
+  border-radius:5px!important;
+}
+#volver:hover {
+  border:none!important;
+  background:#548708!important;
+  color:white!important;
+  border:2px solid #fff!important;
+}
 
 /* Back to top button */
 
